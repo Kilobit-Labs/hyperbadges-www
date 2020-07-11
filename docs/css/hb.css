@@ -1,0 +1,133 @@
+/* hb.css */
+/* © 2020 Kilobit Labs Inc. */
+
+* {
+    
+}
+
+body {
+    background-color: black; 
+    background-image: radial-gradient(circle at center 40vh,
+				      #2d2d2d min(10vw, 10vh),
+				      #1f485f min(15vw, 15vh),
+				      #2d2d2d min(20vw, 20vh),
+				      transparent 90%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    height: 99vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    animation: pulse 20s ease infinite;
+    overflow: hidden;
+}
+
+@keyframes pulse {
+    0% {}
+    40% {background-size: 100%;}
+    50% {background-size: 120%;}
+    60% {background-size: 100%;}
+    100% {}
+}
+
+main {
+    width: 60vw;
+    height: 45vh;
+    margin: auto;
+    position: relative;
+}
+
+div.logo {
+    width: 100%;
+    height: 100%;
+    animation: spin 20s ease infinite alternate;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(0deg);}
+    60% {transform: rotate(360deg);}
+    70% {transform: rotate(360deg);}
+    80% {transform: rotate(0deg);}
+    90% {transform: rotate(0deg);}
+    100% {transform: rotate(0deg);}
+}
+
+img.logo-top-left {
+    transform: translate(-85%, -115%);
+}
+
+img.logo-top-right {
+    transform: translate(-15%, -115%);
+}
+
+img.logo-middle-left {
+    transform: translate(-122%, -50%);
+}
+
+img.logo-middle-middle {
+    transform: translate(-50%, -50%);
+}
+
+img.logo-middle-middle:hover {
+    animation: logo-middle-middle-flip 1s linear 1;
+}
+
+@keyframes logo-middle-middle-flip {
+    0% {transform: translate(-50%, -50%) rotateY(0deg);}
+    50% {transform: translate(-50%, -50%) rotateY(180deg);}
+    100% {transform: translate(-50%, -50%) rotateY(0deg);}
+}
+
+img.logo-middle-right {
+    transform: translate(22%, -50%);
+}
+
+img.logo-bottom-left {
+    transform: translate(-85%, 15%);
+}
+
+img.logo-bottom-right {
+    transform: translate(-15%, 15%);
+}
+
+img.logo {
+    max-width: 20vw;
+    max-height: 20vh;
+    width: auto;
+    height: auto;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.cursor {
+    animation: blink 0.5s linear infinite;
+}
+
+@keyframes blink {
+    49% {opacity: 1.0;}
+    50% {opacity: 0.0;}
+    99% {opacity: 0.0;}
+    100% {opactiy: 1.0}
+}
+
+footer {
+    background-color: black;
+    width: 100vw;
+    height: 3vh;
+    min-height: 1rem;
+    margin-top: auto;
+    margin-bottom: 0;
+    flex-shrink: 0;
+    border-top: 1px solid #1e8fcf;
+}
+
+footer p.copy {
+    float: right;
+}
