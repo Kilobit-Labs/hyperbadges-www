@@ -117,6 +117,11 @@ img.logo {
     100% {opactiy: 1.0}
 }
 
+main small {
+    font-size: 8pt;
+    vertical-align: super;
+}
+
 footer {
     background-color: black;
     width: 100vw;
