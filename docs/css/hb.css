@@ -2,7 +2,11 @@
 /* © 2020 Kilobit Labs Inc. */
 
 * {
-    
+    font-family: serif;
+}
+
+a:visited {
+    color: #3daee9;
 }
 
 body {
@@ -39,6 +43,17 @@ main {
     height: 45vh;
     margin: auto;
     position: relative;
+}
+
+main.msg {
+    background-color: rgb(150, 150, 150, 0.5);
+    border-radius: 7px;
+    padding: 1rem;
+    backdrop-filter: blur(40px);
+}
+
+main.msg p {
+    font-family: sans;
 }
 
 div.logo {
