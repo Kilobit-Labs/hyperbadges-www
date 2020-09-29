@@ -2,7 +2,11 @@
 /* © 2020 Kilobit Labs Inc. */
 
 * {
-    font-family: serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Exo 2', sans-serif;
 }
 
 a:visited {
@@ -52,9 +56,11 @@ main.msg {
     backdrop-filter: blur(40px);
 }
 
+/*
 main.msg p {
     font-family: sans;
 }
+*/
 
 div.logo {
     width: 100%;
